@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "attributes": {
+                "given-name": "",
+                "formatted-name": "MARIA MAGALY CONTRERAS YAX",
+                "family-name": "",
+                "taxation-id": "",
+                "gender": "",
+                "nationality": ""
+            },
+            "contact-medium": {
+                "email-address": ""
+            },
+            "identifications": {
+                "identification-type": "DPI",
+                "identification-id": "2425737110101"
+            },
+            "type": "individuals"
+        }
+    ],
+    "included": [
+        {
+            "attributes": {
+                "characteristics": {
+                    "CH_PlanType": "mobile",
+                    "CH_PlanSubType": "prepaid",
+                    "CH_ICC": "8950202301649600315",
+                    "CH_IMEI": "355903118067749",
+                    "CH_IMSI": "704020317168273",
+                    "product-code": "P",
+                    "product-description": "PREPAGO",
+                    "plan-name": "AMIGO, , ",
+                    "plan-code": "60, , ",
+                    "plan-description": "AMIGO, , "
+                },
+                "resource-type": "msisdn",
+                "primary-id": "50253200998",
+                "contract-id": "194148",
+                "annex-id": "61370470",
+                "customer-id": "55752",
+                "customer-type": "",
+                "address": "",
+                "lifecycle-status": "active",
+                "lifecycle-code": "W",
+                "lifecycle-description": "Activo en Domital (PP)",
+                "start-datetime": "2019-09-19"
+            },
+            "billing-profile": {
+                "billing-cycle": "I",
+                "invoice-format": "",
+                "billing-day-start": "19",
+                "billing-day-end": "18"
+            },
+            "type": "resources"
+        },
+        {
+            "attributes": {
+                "characteristics": {
+                    "CH_PlanType": "mobile",
+                    "CH_PlanSubType": "prepaid",
+                    "CH_ICC": "8950202301651751220",
+                    "CH_IMEI": "355817083054252",
+                    "CH_IMSI": "704020317383354",
+                    "product-code": "K",
+                    "product-description": "KIT",
+                    "plan-name": "AMIGO, , ",
+                    "plan-code": "60, , ",
+                    "plan-description": "AMIGO, , "
+                },
+                "resource-type": "msisdn",
+                "primary-id": "50251957103",
+                "contract-id": "194148",
+                "annex-id": "60738595",
+                "customer-id": "55752",
+                "customer-type": "",
+                "address": "",
+                "lifecycle-status": "assigned",
+                "lifecycle-code": "M",
+                "lifecycle-description": "Lineas Pre-Activadas Amigo Kit (EN HOLD)",
+                "start-datetime": "2019-08-23"
+            },
+            "billing-profile": {
+                "billing-cycle": "N",
+                "invoice-format": "",
+                "billing-day-start": "1",
+                "billing-day-end": "31"
+            },
+            "type": "resources"
+        }
+    ]
+}

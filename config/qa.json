@@ -1,14 +1,26 @@
 {
   "port": 3000,
-  "Customer": {
+  "Servicios": {
     "dbConfig": {
       "host": "localhost",
       "port": 5984,
       "dbName": "customers"
     },
-    "credit": {
-      "initialLimit": 100,
-      "initialDays": 1
+    "homeNetwork": {
+      "nombre": "profiling",
+      "url": "http://172.22.93.15/v1/homeNetwork/homePasses/?dpi=$dpi$",
+      "token": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBUEkgR2VlIiwic3ViIjoiUW9FIiwiaWF0IjoxNTQ5NDkxNTYyLCJpc3MiOiJDdXN0b21lckFuYWx5dGljc1NlcnZpY2VzIiwiYXBpX2dlZSI6dHJ1ZX0.MG8eBYAaDK1zwEl5WzBIKp3yq3HrBnUEACwmEBe3ocY",
+      "parametros": {
+        "dpi": "$dpi$"
+      }
+    },
+    "customermanagementmic": {
+      "nombre": "cassandra",
+      "url": "http://172.22.93.15/v1/mic/customermanagement/customer/$subscriberId$?type=subscriberId&all=true",
+      "token": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidGlnb2FwaWxhdGFtIiwicGFzc3dvcmQiOiJDb21jZWwyMDEyIiwiZGF0ZSI6IjIwMTctMDUtMDhUMTI6Mjc6NTctMDY6MDAifQ.4n5pvGCBP16CrHkFc8CFR7wl3QD4c9-SFzZUELLHeQM",
+      "parametros": {
+        "subscriberId": "$subscriberId$"
+      }
     }
   }
 }

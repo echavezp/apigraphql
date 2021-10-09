@@ -8,7 +8,7 @@ const getData = async (url, token, params) => {
     },
     params
   }).then(response => {
-    resp = response
+    resp = response.data
   }).catch(function (error) {
     console.log(error)
     resp = 0
@@ -16,40 +16,6 @@ const getData = async (url, token, params) => {
   return resp
 }
 
-const postData = async (uri, projectide, parentide, testplanname, token) => {
-  let res = 0
-  const fields = {
-    project: {
-      key: projectide
-    },
-    parent: {
-      key: parentide
-    },
-    summary: testplanname,
-    description: 'Deployment - ' + testplanname,
-    issuetype: {
-      name: 'Test Plan'
-    }
-  }
-
-  await axios({
-    method: 'post',
-    url: uri,
-    headers: {
-      Authorization: `${token}`
-    },
-    data: {
-      fields
-    }
-  }).then(resp => {
-    res = resp.data
-  }).catch(function (err) {
-    console.log(err)
-  })
-  return res
-}
-
 module.exports = {
-  getData,
-  postData
+  getData
 }
